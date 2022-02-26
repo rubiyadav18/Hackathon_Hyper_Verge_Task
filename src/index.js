@@ -14,18 +14,17 @@ import './index.css';
 import './App.css';
 import Home from './componets/Home'
 import Login from './componets/Login';
-import SignUp from './componets/Sign_up';
-
+// import SignUp from './componets/Sign_up';
+import Register from './componets/registration';
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-
 
 ReactDOM.render(
   
   <Router>
           <div className="App">
           <Routes>
-        <Route exact path="/signup" element={<SignUp/>}/>
+        <Route exact path="/registration" element={<Register/>}/>
         <Route exact path="/login" element={<Login/>}/>
         {/* <Route exact path="/" element={<App/>}/> */}
 
